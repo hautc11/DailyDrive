@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -11,7 +12,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.minimalistcraft.android.dailydrive.ui.theme.DailyDriveTheme
+import com.minimalistcraft.android.core.design.BaseColorScheme
+import com.minimalistcraft.android.core.design.DailyDriveTheme
+import com.minimalistcraft.android.core.design.LocalColorScheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +22,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             DailyDriveTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                val colors = LocalColorScheme.current
+                Scaffold(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(colors.mainBackground)
+                ) { innerPadding ->
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)

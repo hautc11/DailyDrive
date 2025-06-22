@@ -1,4 +1,4 @@
-package com.minimalistcraft.android.dailydrive.ui.theme
+package com.minimalistcraft.android.core.design
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">DailyDrive</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="home">Home</string>
+    <string name="report">Report</string>
+    <string name="my_habit">My Habit</string>
+    <string name="profile">Profile</string>
 </resources>

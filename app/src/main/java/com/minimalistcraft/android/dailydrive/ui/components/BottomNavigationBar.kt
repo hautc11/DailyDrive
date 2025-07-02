@@ -13,6 +13,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.minimalistcraft.android.core.design.AppTheme.colors
+import com.minimalistcraft.android.core.design.AppTheme.typography
 import com.minimalistcraft.android.dailydrive.ui.navigation.BottomNavItem
 
 @Composable
@@ -55,7 +56,8 @@ fun BottomNavigationBar(
                             colors.indicatorTextColor
                         } else {
                             colors.mainTextColor
-                        }
+                        },
+                        style = typography.bodyTiny
                     )
                 },
                 colors = NavigationBarItemDefaults.colors(

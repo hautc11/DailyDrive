@@ -11,16 +11,17 @@ import androidx.compose.runtime.CompositionLocalProvider
 @Composable
 fun DailyDriveTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
+    typography: AppTypography = DefaultAppTypography,
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
 
     CompositionLocalProvider(
         LocalColorScheme provides colorScheme,
+        LocalAppTypography provides typography,
         LocalRippleConfiguration provides AppRipple.default
     ) {
         MaterialTheme(
-            typography = Typography,
             content = content
         )
     }
@@ -30,4 +31,8 @@ object AppTheme {
     val colors: BaseColorScheme
         @Composable
         get() = LocalColorScheme.current
+
+    val typography: AppTypography
+        @Composable
+        get() = LocalAppTypography.current
 }

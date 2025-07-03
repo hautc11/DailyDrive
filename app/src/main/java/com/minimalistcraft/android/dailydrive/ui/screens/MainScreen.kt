@@ -9,8 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.minimalistcraft.android.core.design.AppTheme.colors
-import com.minimalistcraft.android.core.design.LocalColorScheme
-import com.minimalistcraft.android.dailydrive.ui.components.BottomNavigationBar
+import com.minimalistcraft.android.dailydrive.ui.navigation.BottomNavigationBar
 import com.minimalistcraft.android.dailydrive.ui.navigation.AppNavigationGraph
 import com.minimalistcraft.android.dailydrive.ui.navigation.BottomNavItem
 

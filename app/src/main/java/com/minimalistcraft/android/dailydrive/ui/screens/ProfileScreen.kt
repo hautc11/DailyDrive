@@ -4,7 +4,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.minimalistcraft.android.core.design.AppTheme.colors
-import com.minimalistcraft.android.core.design.LocalColorScheme
 
 @Composable
 fun ProfileScreen(modifier: Modifier = Modifier) {

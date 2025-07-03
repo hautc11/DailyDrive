@@ -4,4 +4,11 @@
     <string name="report">Report</string>
     <string name="my_habit">My Habit</string>
     <string name="profile">Profile</string>
+    <string name="repeat_daily">Daily</string>
+    <string name="repeat_weekly">Weekly</string>
+    <string name="repeat_monthly">Monthly</string>
+    <string name="tod_all">All</string>
+    <string name="tod_morning">Morning</string>
+    <string name="tod_afternoon">Afternoon</string>
+    <string name="tod_evening">Evening</string>
 </resources>

@@ -5,7 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.minimalistcraft.android.dailydrive.ui.screens.HabitScreen
-import com.minimalistcraft.android.dailydrive.ui.screens.HomeScreen
+import com.minimalistcraft.android.dailydrive.ui.screens.home.HomeScreen
 import com.minimalistcraft.android.dailydrive.ui.screens.ProfileScreen
 import com.minimalistcraft.android.dailydrive.ui.screens.ReportScreen
 

@@ -38,6 +38,14 @@ val LabelRegular = TextStyle(
     lineHeight = 20.sp
 )
 
+val BodyStrong = TextStyle(
+    fontFamily = Montserrat,
+    fontSize = 14.sp,
+    fontWeight = FontWeight.SemiBold,
+    letterSpacing = 0.1.sp,
+    lineHeight = 20.sp
+)
+
 val BodyMedium = TextStyle(
     fontFamily = Montserrat,
     fontSize = 14.sp,

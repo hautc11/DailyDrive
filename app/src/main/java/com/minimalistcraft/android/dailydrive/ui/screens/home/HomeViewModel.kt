@@ -23,56 +23,46 @@ class HomeViewModel @Inject constructor() : ViewModel() {
             HabitUiModel(
                 id = 1,
                 name = "Daily Habit 1",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
             ),
             HabitUiModel(
                 id = 2,
                 name = "Daily Habit 2",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
             ),
             HabitUiModel(
                 id = 3,
                 name = "Daily Habit 3",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
             ),
             HabitUiModel(
                 id = 4,
                 name = "Daily Habit 4",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
             ),
             HabitUiModel(
                 id = 5,
                 name = "Daily Habit 5",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
             ),
             HabitUiModel(
                 id = 6,
                 name = "Daily Habit 1",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
                 isCompleted = true
             ),
             HabitUiModel(
                 id = 7,
                 name = "Daily Habit 7",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
                 isCompleted = true
             ),
             HabitUiModel(
                 id = 8,
                 name = "Daily Habit 8",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
                 isCompleted = true
             ),
             HabitUiModel(
                 id = 9,
                 name = "Daily Habit 9",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
                 isCompleted = true
             ),
             HabitUiModel(
                 id = 10,
                 name = "Daily Habit 10",
-                iconRes = com.minimalistcraft.android.core.R.drawable.ic_completed,
                 isCompleted = true
             )
         )

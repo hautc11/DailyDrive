@@ -21,13 +21,15 @@ import androidx.compose.ui.zIndex
 import com.minimalistcraft.android.core.annotation.CustomPreview
 import com.minimalistcraft.android.core.annotation.ThemedPreview
 import com.minimalistcraft.android.core.design.AppTheme.colors
+import com.minimalistcraft.android.core.design.MainTextColorDark
 import com.minimalistcraft.android.core.design.TabActiveColor
 import com.minimalistcraft.android.core.design.TitleMedium
 
 @Composable
 fun RepeatTypeTab(
+    modifier: Modifier = Modifier,
     items: List<String>,
-    modifier: Modifier = Modifier
+    onTabSelected: (String) -> Unit = {}
 ) {
     var selectedIndex by remember { mutableIntStateOf(0) }
 
@@ -54,11 +56,14 @@ fun RepeatTypeTab(
                 Tab(
                     modifier = Modifier.zIndex(2f),
                     selected = isSelected,
-                    onClick = { selectedIndex = index },
+                    onClick = {
+                        selectedIndex = index
+                        onTabSelected.invoke(items[index])
+                    },
                     text = {
                         Text(
                             text = text,
-                            color = colors.mainTextColor,
+                            color = if (isSelected) MainTextColorDark else colors.mainTextColor,
                             style = TitleMedium
                         )
                     })

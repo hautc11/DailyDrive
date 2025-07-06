@@ -17,6 +17,7 @@ import com.minimalistcraft.android.core.annotation.CustomPreview
 import com.minimalistcraft.android.core.annotation.ThemedPreview
 import com.minimalistcraft.android.core.design.AppTheme
 import com.minimalistcraft.android.core.design.LabelRegular
+import com.minimalistcraft.android.core.design.MainTextColorDark
 import com.minimalistcraft.android.core.design.TabActiveColor
 
 @Composable
@@ -48,7 +49,7 @@ fun Chip(
             Text(
                 text = label,
                 style = LabelRegular,
-                color = AppTheme.colors.mainTextColor,
+                color = if (isSelected) MainTextColorDark else AppTheme.colors.mainTextColor,
                 modifier = Modifier.padding(vertical = 8.dp, horizontal = 12.dp)
             )
         }

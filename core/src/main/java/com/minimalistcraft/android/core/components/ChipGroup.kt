@@ -6,14 +6,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun ChipGroup(modifier: Modifier = Modifier, chips: List<String>) {
+fun ChipGroup(
+    modifier: Modifier = Modifier,
+    chips: List<String>,
+    selectedLabel: String,
+    onChipSelected: (String) -> Unit = {}
+) {
     LazyRow {
         items(chips) {
             Chip(
                 modifier = modifier,
                 label = it,
-                isSelected = false,
-                onSelectionChanged = { }
+                isSelected = selectedLabel == it,
+                onSelectionChanged = {
+                    onChipSelected.invoke(it)
+                }
             )
         }
     }

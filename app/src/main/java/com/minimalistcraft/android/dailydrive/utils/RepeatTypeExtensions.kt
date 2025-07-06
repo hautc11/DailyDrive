@@ -9,3 +9,11 @@ fun RepeatType.displayName(context: Context): String = when (this) {
     RepeatType.WEEKLY -> context.getString(R.string.repeat_weekly)
     RepeatType.MONTHLY -> context.getString(R.string.repeat_monthly)
 }
+
+fun String.toRepeatType(): RepeatType = when (this) {
+    "Daily" -> RepeatType.DAILY
+    "Weekly" -> RepeatType.WEEKLY
+    "Monthly" -> RepeatType.MONTHLY
+    else -> throw IllegalArgumentException("Invalid repeat type: $this")
+
+}

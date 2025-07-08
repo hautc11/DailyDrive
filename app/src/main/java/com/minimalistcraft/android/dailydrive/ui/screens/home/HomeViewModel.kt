@@ -2,13 +2,16 @@ package com.minimalistcraft.android.dailydrive.ui.screens.home
 
 import androidx.lifecycle.ViewModel
 import com.minimalistcraft.android.dailydrive.model.HabitUiModel
+import com.minimalistcraft.android.domain.usecase.GetHabitsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor() : ViewModel() {
+class HomeViewModel @Inject constructor(
+    private val getHabitsUseCase: GetHabitsUseCase
+) : ViewModel() {
 
     private val _uiState = MutableStateFlow<HomeUiState>(HomeUiState.Loading)
     val uiState: StateFlow<HomeUiState>
